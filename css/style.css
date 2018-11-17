@@ -1,0 +1,135 @@
+*{
+  border: solid 0px;
+  font-family: 標楷體;
+  position: relative;
+  overflow:hidden;
+}
+html,body{
+  width: 100%; height: 100%;
+  padding: 0px; margin: 0px;
+}
+body{
+  background-color: #C9FFFF;
+  border-top: solid 20px #009494;
+  border-bottom: solid 20px #009494;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.namecard{
+  width: 400px; height: 200px;
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  background-color: #F2FFFF;
+  color: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  border: solid 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  box-shadow: 0px 25px 15px -10px rgba(0, 0, 0, 0.15);
+}
+.namecard h2{
+  font-size: 30px;
+  color: #009E9E;
+}
+.namecard h2 span{
+  font-size: 20px;
+  font-weight: 500;
+  color: #009E9E;
+}
+.namecard h5{
+  font-size: 20px;
+  color: #00EBEB;
+  letter-spacing: 2px;
+}
+.namecard p{
+  font-size: 18px;
+  letter-spacing: 5px;
+  line-height: 15px;
+  color: #00CCCC;
+}
+.circle{
+  width: 150px; height: 150px;
+  border-radius: 100%;
+  position: absolute;
+}
+.circle1 {
+  right: 150px;
+  top: 240px;
+  background-color: #4FFFFF
+}
+.circle2 {
+  right: -60px;
+  top: 50px;
+  width: 80px; height: 80px;
+  border: dotted 7px #4FFFFF;
+}
+.mark{
+  font-size: 200px;
+  font family: impact;
+  position: absolute;
+  width: 100%;
+  text-align: right;
+  color: rgba(0, 0, 0, 0.05);
+  overfolw: hidden;
+  letter-spacing:20px;
+  animation-name:mark;
+  animation-duration:2s;
+  }
+.dumbo{
+  font-size: 650px;
+  font family: impact;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: right;
+   z-index:-1;
+  opacity:0.5;
+}
+.circle3{
+  border-radius:100%;
+  left:-150px;
+  top:400px;
+  width:400px;
+  height:400px;
+  background-color:#12FFFF;
+}
+.ele{
+    position:absolute;
+    width:100px;
+    height:100px;
+    border-radius:100px;
+    background:#00008F;
+    animation-name:ele;
+    animation-duration:5s;
+    animation-iteration-count:3;
+    animation-direction:alternate;
+    left:100px;
+}
+@keyframes ele{
+    from{
+        top:700px;
+    }
+    to{
+        top:0px;
+    }
+  0%{
+      background: #12FFFF;
+  }
+  50%{
+      background: #00CCCC;
+  }
+  100%{
+      background: #008080;
+  }
+}
+
+@keyframes mark{
+  0%{
+      font-size:20px;
+  }
+  
+  100%{
+      font-size:200px;
+  }
+}
